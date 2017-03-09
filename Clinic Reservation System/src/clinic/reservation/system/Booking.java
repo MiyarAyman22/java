@@ -10,8 +10,8 @@ public class Booking {
 private int ID;
 private  int Update;
 private  int Cancel;
-private int Avaliable_time;
-private int search_doctors;
+private boolean Avaliable_time;
+private boolean search_doctors;
 private int view_therapy_money;
     public void ID(int BookingID)
     {
@@ -25,11 +25,11 @@ private int view_therapy_money;
     {
         this.Cancel=BookingCancel;
     }
-    public void Avaliable_time(int BookingAvaliable_time)
+    public void Avaliable_time(boolean BookingAvaliable_time)
     {
         this.Avaliable_time=BookingAvaliable_time;
     }
-    public void search_doctors(int Bookingsearch_doctors)
+    public void search_doctors(Boolean Bookingsearch_doctors)
     {
     this.search_doctors=Bookingsearch_doctors;
     }

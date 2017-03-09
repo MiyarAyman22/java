@@ -10,11 +10,11 @@ package clinic.reservation.system;
  * @author Hp
  */
 public class Appointments {
-    private int patient_comment;
+    private String patient_comment;
     private int ID;
-    private int About_us;
-    private int Rate_Us;
-    public void patient_comment(int Appointmentspatient_comment)
+    private String About_us;
+    private char Rate_Us;
+    public void patient_comment(String Appointmentspatient_comment)
     {
         this.patient_comment=Appointmentspatient_comment;
     }
@@ -22,11 +22,11 @@ public class Appointments {
     {
         this.ID=AppointmentsID;
     }
-    public void About_us(int AppointmentsAbout_us)
+    public void About_us(String AppointmentsAbout_us)
     {
         this.About_us=AppointmentsAbout_us;
     }
-    public void Rate_Us(int AppointmentsRate_Us)
+    public void Rate_Us(char AppointmentsRate_Us)
     {
         this.Rate_Us=AppointmentsRate_Us;
     }

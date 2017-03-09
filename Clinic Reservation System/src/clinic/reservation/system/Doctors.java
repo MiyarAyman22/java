@@ -12,32 +12,32 @@ package clinic.reservation.system;
 public class Doctors {
     private int ID;
     private String Name;
-    private int mail;
-            private int Specialization;
-                    private int full_time;
-                            private int half_time;
+    private String mail;
+            private String Specialization;
+                    private boolean full_time;
+                            private boolean half_time;
                             
     public void ID(int DoctorsID)
     {
         this.ID=DoctorsID;
     }
-    public void Name(int DoctorsName)
+    public void Name(String DoctorsName)
     {
         this.Name=DoctorsName;
     }
-    public void mail(int Doctorsmail)
+    public void mail(String Doctorsmail)
     {
         this.mail=Doctorsmail;
     }
-    public void Specialization(int DoctorsSpecialization)
+    public void Specialization(String DoctorsSpecialization)
     {
         this.Specialization=DoctorsSpecialization;
     }
-    public void Full_time(int DoctorsFull_time)
+    public void Full_time(boolean DoctorsFull_time)
     {
     this.Full_time=DoctorsFull_time;
     }
-    public void Half_time(int DoctorsHalf_time)
+    public void Half_time(boolean DoctorsHalf_time)
     {
         this.Half_time=DoctorsHalf_time;
     }

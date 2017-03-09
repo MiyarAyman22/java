@@ -5,52 +5,48 @@
  */
 package clinic.reservation.system;
 
-/**
- *
- * @author Hp
- */
 public class Admin_Staff {
     private int Id;
-    private String mail;
-    private String nurses;
+    private String Mail;
+    private String Nurses;
     private String Reception;
     private String clinician;
     private String Maintaining_supplies;
     private String IT;
-    private String accountant;
+    private String Accountant;
             
     
-    public void Id(int Admin_StaffID )
+    public void Id(int Admin_StaffId )
     {
-        this.Id=Admin_Staff ID;
+        this.Id=Admin_StaffId;
     }
-    public void mail(int Admin_Staff)
+    public void Mail(String Admin_StaffMail)
     {
-        this.mail= Admin_Staff mail;
+        this.Mail= Admin_StaffMail;
     }
-    public void nurses(int Admin_Staff)
+    public void Nurses(String Admin_StaffNurses)
     {
-        this.nurses=Admin_Staff nurses;
+        this.Nurses=Admin_StaffNurses;
     }
-    public void Reception(int Admin_Staff)
+    public void Reception(String Admin_StaffReception)
     {
-        this.Reception=Admin_Staff Reception;
+        this.Reception=Admin_StaffReception;
     }
-    public void  clinician(int Admin_Staff)
+    public void  clinician(String Admin_Staffclinician)
     {
-        this.clinician=Admin_Staff clinician;
+        this.clinician=Admin_Staffclinician;
     }
-    public void Maintaining_supplies(int Admin_Staff)
+    public void Maintaining_supplies(String Admin_StaffMaintaining_supplies)
     {
-        this.Maintaining_supplies=Admin_Staff Maintaining_supplies;
+        this.Maintaining_supplies=Admin_StaffMaintaining_supplies;
     }
-    public void IT(int Admin_Staff)
+    public void IT(String Admin_StaffIT )
     {
-        this.IT=Admin_Staff Admin_Staff;
+        this.IT=Admin_StaffIT;
     }
-    public void accountant(int Admin_Staff)
+    public void Accountant(String Admin_StaffAccountant)
     {
-        this.accountant=Admin_Staff accountant;
+        this.Accountant=Admin_StaffAccountant;
     }
     
 }

@@ -11,26 +11,26 @@ package clinic.reservation.system;
  */
 public class Schedulling {
     private String appointment_reminders;
-    private String available_time;
-    private String doctors_avaliable;
+    private boolean available_time;
+    private boolean doctors_avaliable;
     private String patient_appointment;
    
     
-    public void Appointment_reminders(int SchedullingAppointment_reminders)
+    public void Appointment_reminders(String SchedullingAppointment_reminders)
     {
-        this.Appointment_reminders=Schedulling Appointment_reminders;
+        this.appointment_reminders=SchedullingAppointment_reminders;
     }
-    public void Available_time(int SchedullingAvailable_time)
+    public void Available_time(boolean SchedullingAvailable_time)
     {
-        this.Available_time=Schedulling Available_time;
+        this.available_time=SchedullingAvailable_time;
     }
-    public void Doctors_avaliable(int SchedullingDoctors_avaliable)
+    public void Doctors_avaliable(boolean SchedullingDoctors_avaliable)
     {
-        this.Doctors_avaliable=Schedulling Doctors_avaliable;
+        this.doctors_avaliable=SchedullingDoctors_avaliable;
     }
-    public void Patient_appointment(int SchedullingPatient_appointment)
+    public void Patient_appointment(String SchedullingPatient_appointment)
     {
-        this.Patient_appointment=Schedulling Patient_appointment;
+        this.patient_appointment=SchedullingPatient_appointment;
     }
 
   
