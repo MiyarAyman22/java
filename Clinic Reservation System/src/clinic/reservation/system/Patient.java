@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package clinic.reservation.system;
-
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 
@@ -22,9 +22,27 @@ public class Patient extends person {
     protected  boolean Cancel;
     protected String pass;
 
-    public Patient(int id, String name, int Age, String Address) {
+    public Patient(int Id, String Name, String User_Name, String address, int age, int Mobile_phone, char Blood_type, boolean chonic_Diseases, char Gender, boolean Update, boolean Cancel, String pass, int id, String name, int Age, String Address) {
         super(id, name, Age, Address);
+        this.Id = Id;
+        this.Name = Name;
+        this.User_Name = User_Name;
+        this.address = address;
+        this.age = age;
+        this.Mobile_phone = Mobile_phone;
+        this.Blood_type = Blood_type;
+        this.chonic_Diseases = chonic_Diseases;
+        this.Gender = Gender;
+        this.Update = Update;
+        this.Cancel = Cancel;
+        this.pass = pass;
     }
+
+    Patient() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
 
     @Override
     public int getId() {

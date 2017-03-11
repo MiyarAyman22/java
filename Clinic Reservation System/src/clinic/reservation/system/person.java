@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 package clinic.reservation.system;
-
-import java.util.logging.Logger;
-
+import java.util.Scanner;
 /**
  *
  * @author Hp

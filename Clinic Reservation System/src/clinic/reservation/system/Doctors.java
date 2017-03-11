@@ -5,7 +5,7 @@
  */
 
 package clinic.reservation.system;
-
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 /**
@@ -22,15 +22,35 @@ public class Doctors extends person {
                             protected boolean half_time;
                             protected  boolean Update_schedules;
 protected  boolean Cancel;
-protected String User_Name;
+protected  String User_Name ;
 protected String pass;
 protected  boolean Update_fees;
 protected  boolean Order_medical_supplier;
 
-    public Doctors(int id, String name, int Age, String Address) {
+    public Doctors(int ID, String Name, String mail, String Specialization, boolean full_time, boolean half_time, boolean Update_schedules, boolean Cancel, String User_Name, String pass, boolean Update_fees, boolean Order_medical_supplier, int id, String name, int Age, String Address) {
         super(id, name, Age, Address);
+        this.ID = ID;
+        this.Name = Name;
+        this.mail = mail;
+        this.Specialization = Specialization;
+        this.full_time = full_time;
+        this.half_time = half_time;
+        this.Update_schedules = Update_schedules;
+        this.Cancel = Cancel;
+        this.User_Name = User_Name;
+        this.pass = pass;
+        this.Update_fees = Update_fees;
+        this.Order_medical_supplier = Order_medical_supplier;
     }
 
+    Doctors() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
+    
+
+    
     public int getID() {
         return ID;
     }

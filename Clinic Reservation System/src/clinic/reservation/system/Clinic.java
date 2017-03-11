@@ -4,20 +4,19 @@
  * and open the template in the editor.
  */
 package clinic.reservation.system;
-
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Clinic 
 {
-private int ID;
-private  String Address;
-private  int phone_Number ;
-private String About ;
-private String Specilization;
+String Address;
+int phone_Number ;
+String About ;
+String Specilization;
 private boolean X_ray_room;
 
-    public Clinic(int ID, String Address, int phone_Number, String About, String Specilization, boolean X_ray_room) {
-        this.ID = ID;
+    public Clinic( String Address, int phone_Number, String About, String Specilization, boolean X_ray_room) {
+        
         this.Address = Address;
         this.phone_Number = phone_Number;
         this.About = About;
@@ -25,13 +24,11 @@ private boolean X_ray_room;
         this.X_ray_room = X_ray_room;
     }
 
-    public int getID() {
-        return ID;
+    Clinic() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
-    }
+   
 
     public String getAddress() {
         return Address;
@@ -76,7 +73,7 @@ private boolean X_ray_room;
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 67 * hash + (this.X_ray_room ? 1 : 0);
+        hash = 53 * hash + (this.X_ray_room ? 1 : 0);
         return hash;
     }
 
@@ -92,9 +89,6 @@ private boolean X_ray_room;
             return false;
         }
         final Clinic other = (Clinic) obj;
-        if (this.ID != other.ID) {
-            return false;
-        }
         if (this.X_ray_room != other.X_ray_room) {
             return false;
         }
@@ -103,9 +97,13 @@ private boolean X_ray_room;
 
     @Override
     public String toString() {
-        return "Clinic{" + "ID=" + ID + ", Address=" + Address + ", phone_Number=" + phone_Number + ", About=" + About + ", Specilization=" + Specilization + ", X_ray_room=" + X_ray_room + '}';
+        return "Clinic{" + "Address=" + Address + ", phone_Number=" + phone_Number + ", About=" + About + ", Specilization=" + Specilization + ", X_ray_room=" + X_ray_room + '}';
     }
     private static final Logger LOG = Logger.getLogger(Clinic.class.getName());
+
+    
+    
+
     
 
 }

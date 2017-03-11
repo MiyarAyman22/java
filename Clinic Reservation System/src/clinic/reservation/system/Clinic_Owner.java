@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package clinic.reservation.system;
-
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 /**
@@ -17,9 +17,15 @@ public class Clinic_Owner extends Manager {
     protected String Address;
     protected int Mobile_phone;
 
-    public Clinic_Owner(String Name, String Mail, int mobile_phone) {
+    public Clinic_Owner(String name, String mail, String Address, int Mobile_phone, String Name, String Mail, int mobile_phone) {
         super(Name, Mail, mobile_phone);
+        this.name = name;
+        this.mail = mail;
+        this.Address = Address;
+        this.Mobile_phone = Mobile_phone;
     }
+
+    
 
     @Override
     public String getName() {

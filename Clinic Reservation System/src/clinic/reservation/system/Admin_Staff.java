@@ -4,22 +4,46 @@
  * and open the template in the editor.
  */
 package clinic.reservation.system;
-
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Admin_Staff extends Manager
 {
     protected int Id;
+    protected String name;
     protected String mail;
     protected String view_invoices;
     protected String clinician;
    protected String Maintaining_supplies;
-    
-            protected String view_Orders;
+   protected String view_Orders;
 
-    public Admin_Staff(String Name, String Mail, int mobile_phone) {
+    public Admin_Staff(int Id, String name, String mail, String view_invoices, String clinician, String Maintaining_supplies, String view_Orders, String Name, String Mail, int mobile_phone) {
         super(Name, Mail, mobile_phone);
+        this.Id = Id;
+        this.name = name;
+        this.mail = mail;
+        this.view_invoices = view_invoices;
+        this.clinician = clinician;
+        this.Maintaining_supplies = Maintaining_supplies;
+        this.view_Orders = view_Orders;
     }
+
+    public Admin_Staff(int Id, String name, String mail, String view_invoices, String clinician, String Maintaining_supplies, String view_Orders, String Name) {
+        super(Name);
+        this.Id = Id;
+        this.name = name;
+        this.mail = mail;
+        this.view_invoices = view_invoices;
+        this.clinician = clinician;
+        this.Maintaining_supplies = Maintaining_supplies;
+        this.view_Orders = view_Orders;
+    }
+
+    Admin_Staff() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
 
     public int getId() {
         return Id;
@@ -30,13 +54,23 @@ public class Admin_Staff extends Manager
     }
 
     @Override
-    public String getMail() {
-        return Mail;
+    public String getName() {
+        return name;
     }
 
     @Override
-    public void setMail(String Mail) {
-        this.Mail = Mail;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String getMail() {
+        return mail;
+    }
+
+    @Override
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
     public String getView_invoices() {
@@ -71,17 +105,6 @@ public class Admin_Staff extends Manager
         this.view_Orders = view_Orders;
     }
 
-    @Override
-    public String getName() {
-        return Name;
-    }
-
-    @Override
-    public void setName(String Name) {
-        this.Name = Name;
-    }
-
-   
 
     @Override
     public int getMobile_phone() {
@@ -96,11 +119,13 @@ public class Admin_Staff extends Manager
 
     @Override
     public String toString() {
-        return "Admin_Staff{" + "Id=" + Id + ", Mail=" + Mail + ", view_invoices=" + view_invoices + ", clinician=" + clinician + ", Maintaining_supplies=" + Maintaining_supplies + ", view_Orders=" + view_Orders + '}';
+        return "Admin_Staff{" + "Id=" + Id + ", name=" + name + ", mail=" + mail + ", view_invoices=" + view_invoices + ", clinician=" + clinician + ", Maintaining_supplies=" + Maintaining_supplies + ", view_Orders=" + view_Orders + '}';
     }
-
+}
     
-    }
+    
+
+  
 
    
             

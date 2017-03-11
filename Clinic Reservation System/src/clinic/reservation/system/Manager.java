@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package clinic.reservation.system;
-
+import java.util.Scanner;
 /**
  *
  * @author Hp
@@ -18,6 +18,10 @@ public class Manager {
         this.Name = Name;
         this.Mail = Mail;
         this.mobile_phone = mobile_phone;
+    }
+
+    Manager(String Name) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getName() {
