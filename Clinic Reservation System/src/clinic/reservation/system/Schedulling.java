@@ -33,5 +33,45 @@ public class Schedulling {
         this.patient_appointment=SchedullingPatient_appointment;
     }
 
+    public String getAppointment_reminders() {
+        return appointment_reminders;
+    }
+
+    public void setAppointment_reminders(String appointment_reminders) {
+        this.appointment_reminders = appointment_reminders;
+    }
+
+    public boolean isAvailable_time() {
+        return available_time;
+    }
+
+    public void setAvailable_time(boolean available_time) {
+        this.available_time = available_time;
+    }
+
+    public boolean isDoctors_avaliable() {
+        return doctors_avaliable;
+    }
+
+    public void setDoctors_avaliable(boolean doctors_avaliable) {
+        this.doctors_avaliable = doctors_avaliable;
+    }
+
+    public String getPatient_appointment() {
+        return patient_appointment;
+    }
+
+    public void setPatient_appointment(String patient_appointment) {
+        this.patient_appointment = patient_appointment;
+    }
+
+    @Override
+    public String toString() {
+        return "Schedulling{" + "appointment_reminders=" + appointment_reminders + ", available_time=" + available_time + ", doctors_avaliable=" + doctors_avaliable + ", patient_appointment=" + patient_appointment + '}';
+    }
+
   
+    
+    
+    
 }

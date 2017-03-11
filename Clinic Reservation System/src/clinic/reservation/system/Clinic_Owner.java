@@ -5,29 +5,71 @@
  */
 package clinic.reservation.system;
 
+import java.util.logging.Logger;
+
 /**
  *
  * @author Hp
  */
-public class Clinic_Owner {
-    private String Name;
-    private String Mail;
-    private String Address;
-    private int Mobile_phone;
-    public void Name(String Clinic_OwnerName )
-    {
-     this.Name=Clinic_OwnerName;
+public class Clinic_Owner extends Manager {
+    protected String name;
+    protected String mail;
+    protected String Address;
+    protected int Mobile_phone;
+
+    public Clinic_Owner(String Name, String Mail, int mobile_phone) {
+        super(Name, Mail, mobile_phone);
     }
-    public void mail(String Clinic_OwnerMail)
-    {
-        this.Mail=Clinic_OwnerMail;
+
+    @Override
+    public String getName() {
+        return name;
     }
-    public void Address(String Clinic_OwnerAddress)
-    {
-        this.Address=Clinic_OwnerAddress;
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
     }
-    public void Mobile_phone(int Clinic_OwnerMobile_phone)
-    {
-        this.Mobile_phone=Clinic_OwnerMobile_phone;
+
+    @Override
+    public String getMail() {
+        return mail;
     }
+
+    @Override
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String Address) {
+        this.Address = Address;
+    }
+
+    @Override
+    public int getMobile_phone() {
+        return Mobile_phone;
+    }
+
+    @Override
+    public void setMobile_phone(int Mobile_phone) {
+        this.Mobile_phone = Mobile_phone;
+    }
+    private static final Logger LOG = Logger.getLogger(Clinic_Owner.class.getName());
+
+    @Override
+    public String toString() {
+        return "Clinic_Owner{" + "name=" + name + ", mail=" + mail + ", Address=" + Address + ", Mobile_phone=" + Mobile_phone + '}';
+    }
+
+   
+    
+   
+    
+    
+    
+    
 }
